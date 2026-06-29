@@ -49,4 +49,41 @@ O **Social Hub** é um agregador de redes sociais que centraliza o acesso a dife
 | **Iframe** | Exibição de conteúdo externo/interno |
 | **Target Attribute** | Navegação entre páginas |
 
-### Estrutura de Arquivos
+
+---
+
+## 🎯 Funcionalidades
+
+### 1. Navegação por Iframe
+- **Clique no ícone** → Carrega a página correspondente no iframe
+- **Atributo `target="tela"`** → Controla onde o conteúdo é exibido
+- **Navegação suave** sem recarregar a página principal
+
+### 2. Menu de Ícones
+- **Ícones circulares** ou retangulares com logos das redes
+- **Links externos** com `target="_blank"` ou internos com `target="tela"`
+- **Design consistente** para todos os ícones
+
+### 3. Interface Responsiva
+- Adaptação para diferentes tamanhos de tela
+- Layout otimizado para mobile e desktop
+
+---
+
+## 💻 Código de Navegação
+
+```
+    <!-- Estrutura do iframe -->
+    <iframe 
+        src="HTML/home.html" 
+        frameborder="1" 
+        name="tela" 
+        id="tela">
+        Seu navegador não é compatível
+    </iframe>
+
+    <!-- Ícones de navegação -->
+    <a href="HTML/home.html" target="tela">
+        <img src="imagens/logo-home.jpg" alt="Home" class="menu">
+    </a>
+```
